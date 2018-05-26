@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for循环</title>
+</head>
+<body>
+<ul>
+{% for user in username|reverse %}
+    <li>用户名：{{ user }}</li>
+{% endfor %}
+<table width="200px;" height="100px;" border="1px solid #fff">
+    <thead>
+        <tr>
+            <th>用户名</th>
+            <th>年龄</th>
+            <th>所在地</th>
+        </tr>
+    </thead>
+    <tbody>
+{#        <tr>#}
+{#            <th>{{ person.name }}</th>#}
+{#            <th>{{ person.age }}</th>#}
+{#            <th>{{ person.addr }}</th>#}
+{#        </tr>#}
+        <tr>
+            {% for k,v in person.items() %}
+                <td>{{ v }}</td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for key in person.keys() %}
+            <td>{{ key }}</td>
+            {% endfor %}
+
+        </tr>
+    </tbody>
+</table>
+</ul>
+<hr>
+<table>
+    <thead>
+        <tr>
+            <td>书名</td>
+            <td>作者</td>
+            <td>价格</td>
+            <td>数量</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in books %}
+        {% if loop.first %}
+            <tr style="background: gold;">
+        {% elif loop.last %}
+            <tr style="background: lightpink;">
+        {% else %}
+            <tr style="background: lightgray;">
+        {% endif %}
+            <td>{{ book.name }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.price }}</td>
+            <td>{{ loop.length }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<hr>
+<table>
+    <tbody>
+        {% for i in range(1,10) %}
+            <tr>
+                {% for j in range(1, i+1) %}
+                        <td>{{ j }} * {{ i }} = {{ i*j }}</td>
+                {% endfor %}
+            </tr>
+            <br>
+        {% endfor %}
+
+    </tbody>
+</table>
+</body>
+</html>

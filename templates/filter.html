@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过滤器</title>
+</head>
+<body>
+{#绝对值: {{ nums | abs }}<br>#}
+{#个性签名: {{ desc | default('此人很酷, 什么都没留下', boolean=true) }}#}
+{#<p><script>alert('hello')</script></p>#}
+{#<p>info: {{ info }}</p>#}
+{{ info|safe }}
+</body>
+</html>
