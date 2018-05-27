@@ -14,7 +14,7 @@ def index():
 
 HOST = '127.0.0.1'
 USER = 'root'
-PASSWORD = 'root'
+PASSWORD = 'your password'
 DB = 'flask_sqlalchemy01'
 PORT = 3306
 

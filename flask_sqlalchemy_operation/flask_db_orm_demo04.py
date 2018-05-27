@@ -6,7 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 USER = 'root'
-PASSWORD = 'root'
+PASSWORD = 'your password'
 PORT = 3306
 HOST = '127.0.0.1'
 DB = 'flask_sqlalchemy01'

@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker, relationship
 
 HOST = '127.0.0.1'
 USER = 'root'
-PASSWORD = 'root'
+PASSWORD = 'your password'
 PORT = 3306
 DB = 'flask_sqlalchemy01'
 

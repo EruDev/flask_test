@@ -6,7 +6,7 @@ HOST = '127.0.0.1'
 PORT = 3306
 DB = 'flask_sqlalchemy01'
 USER = 'root'
-PASSWORD = 'root'
+PASSWORD = 'your password'
 
 # mysql+pymysql://root:root@127.0.0.1:3306/flask_sqlalchemy01?charset=utf8
 DB_URI = "mysql+pymysql://{user}:{password}@{host}:{port}/{db}?charset=utf8"\
