@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 HOST = '127.0.0.1'
 USER = 'root'
-PASSWORD = 'root'
+PASSWORD = 'your password'
 DB = 'flask_sqlalchemy_demo'
 PORT = 3306
 
