@@ -18,7 +18,7 @@
 #     manager.run()
 
 from flask_script import Manager
-from models import app, db, BackendUser
+from .models import app, db, BackendUser
 
 
 manager = Manager(app)

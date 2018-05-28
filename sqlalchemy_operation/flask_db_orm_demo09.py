@@ -16,8 +16,7 @@ app.config.update({
     'TEMPLATES_AUTO_RELOAD': True
 })
 
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://{user}:{password}@{host}:{port}/{db}?charset=utf8'\
-                            .format(user=USER, password=PASSWORD, host=HOST, port=PORT, db=DB)
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://{user}:{password}@{host}:{port}/{db}?charset=utf8'.format(user=USER, password=PASSWORD, host=HOST, port=PORT, db=DB)
 
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
 session = sessionmaker(engine)()
