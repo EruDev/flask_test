@@ -23,5 +23,5 @@ class Person(Base):
     name = Column(String(128))
     age = Column(Integer)
 
-
+Base.metadata.drop_all() # 先清空数据库中的表
 Base.metadata.create_all() # 将模型映射到数据库
