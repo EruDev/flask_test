@@ -9,7 +9,7 @@ login_signal2 = namespace.signal('login')
 def login_signal(sender):
     # 用户名 ip 时间
     # username = request.args.get('username')
-    ip = request.remote_addr
+    ip = request.remote_addr # 获取ip地址
     now = datetime.utcnow()
     log_line = '{username}-{ip}-{now}'.format(username=g.user, ip=ip, now=now)
 
