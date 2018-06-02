@@ -11,12 +11,12 @@ class RegisterForm(Form):
 
 
 class LoginForm(Form):
-    # email = StringField(label='邮箱', validators=[Email(message='邮箱输入有误')])
-    # username = StringField(label='用户名', validators=[InputRequired()])
-    # age = IntegerField(label='年龄', validators=[NumberRange(min=18, max=30)])
-    # phone = StringField(label='手机号', validators=[Regexp(r'1[35687]\d{9}', message='手机号输入有误')])
-    # home_page = StringField(label='个人主页', validators=[URL()])
-    # uuid = StringField(label='uuid', validators=[UUID()])
+    email = StringField(label='邮箱', validators=[Email(message='邮箱输入有误')])
+    username = StringField(label='用户名', validators=[InputRequired()])
+    age = IntegerField(label='年龄', validators=[NumberRange(min=18, max=30)])
+    phone = StringField(label='手机号', validators=[Regexp(r'1[35687]\d{9}', message='手机号输入有误')])
+    home_page = StringField(label='个人主页', validators=[URL()])
+    uuid = StringField(label='uuid', validators=[UUID()])
     captcha = StringField(label='验证码', validators=[Length(4, 4)])
 
     def validate_captcha(self, field):
